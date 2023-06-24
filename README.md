@@ -71,11 +71,13 @@
 2. 시간 복잡도와 공간 복잡도 및 기타 요소 표를 통한 성능 비교
 다음은 시간 복잡도, 공간 복잡도, 팬아웃, 높이, 디스크 I/O, 캐시 효율성, 오버헤드 및 기타 사항으로 표를 작성한 것이다.
 여기서 d는 각 노드가 가질 수 있는 최대 자식 노드 수를 뜻한다. 예를 들어, d=3인 B-트리에 대해서는 각 노드가 최대 3개의 자식 노드를 가질 수 있으며 최대 2개의 키 값을 저장할 수 있다. 또한, 수식이나 숫자로 표현되지 않는 값은 상대적인 값임을 미리 밝힌다.
+
 | 알고리즘  | 시간 복잡도  | 공간 복잡도 | 팬아웃 |  높이  |  디스크 I/O | 캐시 효율성 | 오버헤드 | 기타 사항             |
 |---------|------------|------------|------|-------|-----------|----------- |--------|--------------------- |
 | 이진 탐색  | O(log n)   | O(1)        |  2    |  nil  |    nil     |   높음       |  낮음   | 정렬된 데이터에 접근    |
 | B-트리    | O(log_d n) | O(n)        |  d   | O(log_d n) |  높음  |   낮음    | 높음  | 짧은 범위 조회, 동적 파일 시스템 |
 | B+트리   | O(log_d n) | O(n)        |  d   | O(log_d n) |  높음   |  높음    | 높음  | 긴 범위 조회, 순차 접근 패턴  |
+
 
 이진 탐색, B-트리, B+트리의 각각 특징과 성능적인 부분에 상대적이며 대략적인 요소를 표로 나타내 보았다.
 이진 탐색 알고리즘의 경우 시간 복잡도를 로그 함수를 사용하여 O(log n) 로 나타낼 수 있었고, 나머지 두 트리 구조의 경우에는 노드의 개수를 고려한 O(log_d n) 의 시간 복잡도를 확인할 수 있었다. 데이터베이스의 높이에 대해서도 이진 탐색 알고리즘은 1차원 배열에서 진행되기 때문에 높이가 존재하지 않으나, 트리 구조의 경우, 데이터와 데이터가 서로 노드로 연결되어 있기 때문에 동일하게 O(log_d n)의 높이를 가진다고 확인할 수 있다.
@@ -171,9 +173,9 @@ https://github.com/Minauroht/ALGO/
 
 ------
 # 참고문헌 및 참고사이트
-https://youtu.be/iNvYsGKelYs
-https://www.geeksforgeeks.org/binary-search/
-http://lua-users.org/wiki/BinarySearch
-https://www.geeksforgeeks.org/introduction-of-b-tree-2/
-https://programming-idioms.org/idiom/9/create-a-binary-tree-data-structure/2262/lua
-https://www.geeksforgeeks.org/introduction-of-b-tree-2/ 
+https://youtu.be/iNvYsGKelYs  
+https://www.geeksforgeeks.org/binary-search/  
+http://lua-users.org/wiki/BinarySearch  
+https://www.geeksforgeeks.org/introduction-of-b-tree-2/  
+https://programming-idioms.org/idiom/9/create-a-binary-tree-data-structure/2262/lua  
+https://www.geeksforgeeks.org/introduction-of-b-tree-2/   
